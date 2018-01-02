@@ -1,0 +1,281 @@
+body{
+	display: flex;
+	flex-direction:column;
+}
+.add{
+	position: fixed;
+}
+.container{
+	position: relative;
+	flex: 1;
+	padding-bottom: 0.9rem;
+}
+.loading{
+	position: absolute;
+	width: 0.8rem;
+	bottom: 10%;
+	left: 50%;
+	margin-left: -0.4rem;
+	margin-top: -0.4rem;
+	z-index: 999;
+}
+.poster{
+	width:  100%;
+}
+.header .logo{
+	width: 2.43rem;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 1rem;
+}
+.header .imgText{
+	width: 5.9rem;
+	display: block;
+	margin-left: 0.4rem;
+}
+.header {
+	width: 100%;
+	height: 4.96rem;
+	padding-top: 0.7rem;
+	background: url(../img/bj.png) no-repeat;	
+	background-size: 100%;
+	z-index: 20;
+	box-sizing: border-box;
+}
+.img{
+	position: absolute;
+	top: 3.85rem;
+	left: 0;
+	z-index: 30;
+}
+.img img{
+	width: 100%;
+}
+.inputs{
+	margin-bottom: 2rem;
+}
+/* .inputs .mobile{
+	position: relative;
+} */
+.inputs .mobile,.inputs .message,.inputs .user,.inputs .password,.inputs .checkBox{
+	position: relative;
+	margin: 0 auto;
+	width: 6.7rem;
+	height: 1rem;
+	background: #fff;
+	/* padding-top: 0.2rem; */
+	padding-left: 0.24rem;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;	
+	border-bottom: solid 1px #dbdbdb;
+	z-index: 40;
+	box-sizing: border-box;
+}
+.inputs div input[type="text"],.inputs div input[type="number"]{
+	display: inline-block;
+	height: 0.5rem;
+	border: none;
+	outline: none;
+	background: none;
+	-webkit-appearance: none;
+	line-height: normal;
+	line-height: 0.5rem;
+	width: 100%;
+}
+.msg{
+	box-sizing: border-box;
+	width: 2rem;
+	line-height: 0.32rem;
+	text-align: center;
+	font-size: 0.24rem;
+	color: #f26958;
+	border-left: solid 0.02rem #fbb6ad;
+	text-indent: 0.2rem;
+	padding-left: 0.2rem;
+	box-sizing: border-box;
+}
+.padding{
+	line-height: 2.5rem;
+    width: 2.6rem;
+    margin-right: 0.2rem;
+    padding: 0.2rem 0;
+    box-sizing: border-box;
+}
+/* .msg{
+	position: absolute;
+	top: 50%;
+	margin-top: -0.16rem;
+	right: 0.32rem;
+	box-sizing: border-box;
+	width: 1.8rem;
+	line-height: 0.32rem;
+	text-align: center;
+	font-size: 0.24rem;
+	color: #f26958;
+	border-left: solid 0.02rem #fbb6ad;
+	text-indent: 0.2rem;
+} */
+.inputs .checkBox {
+	border: none;
+	display: flex;
+	color: #c6c6c6;
+}
+.inputs .checkBox span{
+	display: block;
+	line-height: 0.9rem;
+	-webkit-box-flex: 1;
+	text-align: center;
+	font-size: 0.28rem;
+	margin-top: -0.05rem;
+}
+.inputs .checkBox span:nth-of-type(1) {
+	text-align: inherit;
+	/* text-indent: 0.1rem; */
+	margin-right: 0.3rem;
+}
+.inputs .checkBox span img{
+	width: 0.32rem;
+	height: 0.32rem;
+	vertical-align: middle;
+}
+.bottom{
+	height: 0.9rem;
+	line-height: 0.9rem;
+	background: #f44933;
+	font-size: 0.34rem;
+	color: #fff;
+	text-align: center;
+	z-index: 999;
+}
+.scroll .scroll_btn{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	background: #f44933;
+	font-size: 0.34rem;
+	color: #fff;
+	text-align: center;
+	z-index: 999;
+}
+.btn{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	background: #f44933;
+	font-size: 0.34rem;
+	color: #fff;
+	text-align: center;
+	z-index: 999;
+}
+.btn2{
+	height: 0.9rem;
+	line-height: 0.9rem;
+	background: #f44933;
+	font-size: 0.34rem;
+	color: #fff;
+	text-align: center;
+	z-index: 999;
+}
+/*弹框*/
+.shadow,.shadow3{ 
+	position: absolute; 
+	top: 0;
+	left: 0;
+	bottom: 0; 
+	right: 0; 
+	background: rgba(0, 0, 0, 0.5); 
+	z-index: 99999;
+	padding-top: 3rem;
+	box-sizing: border-box;
+}
+.shadow .box,.shadow3 .box { 
+	background: #fbfbfb; 
+	width: 5.4rem; 
+	border-radius: 0.28rem; 
+}
+.box_text .title{
+	font-weight: bold;
+	color: #1a1519;
+	font-size: 0.32rem;
+}
+.shadow .box .box_text,.shadow3 .box .box_text{ 
+	padding: 0.2rem 0.4rem; 
+	line-height: 0.55rem; 
+	text-align: center; 
+	box-sizing: border-box;
+}
+.box_text .text{
+	color: #303030;
+	font-size: 0.3rem;
+	text-align: center; 
+}
+.shadow3 .box_text .text{
+	line-height: 1.08rem;
+}
+.shadow .box .box_btn { 
+	line-height: 0.9rem; 
+	display: -webkit-box; 
+}
+.shadow .box .box_btn span { 
+	display: block;
+	-webkit-box-flex: 1; 
+	text-align: center; 
+	border-top: solid 1px #bfbfbf; 
+}
+.shadow .box .cancel { 
+	border-right: solid 1px #ccc; 
+	color: #007aff; 
+	font-size: 0.32rem;
+}
+.shadow .box .confirm { 
+	color: #007aff; 
+	font-weight: bold;
+	font-size: 0.32rem;
+}
+.shadow2 {
+	position: absolute; 
+	top: 0;
+	left: 0;
+	bottom: 0; 
+	right: 0; 
+	background: rgba(0, 0, 0, 0.5); 
+	z-index: 99999;
+	padding-top: 3rem;
+	box-sizing: border-box;
+}
+.shadow2  img{
+	display: block;
+}
+.shadow2 .close{
+	width: 0.38rem;
+	position: absolute;
+	top: 2.8rem;
+	right: 1.28rem;
+}
+.shadow2 .text_con {
+	position: absolute;
+    top: 4rem;
+    left: 2.8rem;
+    width: 2rem;
+    color: #d97c00;
+    font-size: 0.22rem;
+    padding: 0 0.1rem;
+    box-sizing: border-box;
+}
+.shadow2 .regImg{
+	width: 5.98rem;
+	margin: 0 auto;
+	margin-bottom: 0.3rem;
+}
+.shadow2 .button{
+	width: 2.6rem;
+	margin: 0 auto;
+}

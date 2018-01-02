@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>免费大师课</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>		
+		<div class="shadow" style="display:none;">
+			<div class="box">
+				<div class="box_text">
+					<p class="title">提示</p>
+					<p class="text textMsg"></p>
+				</div>
+				<p class="box_btn">
+					<span class="confirm">知道了</span>
+				</p>
+			</div>
+		</div>
+		<div class="container">
+			<img src="img/loading.gif" class="loading" style="display:none;"/>
+			<img src="img/free.jpg" class="poster"/>
+			<div class="inputs">
+				<div class="user">
+					<input type="text" placeholder="请输入姓名"/>
+				</div>
+				<div class="mobile">
+					<input type="number" placeholder="请输入手机号"/>
+					<div class="padding">
+						<span class="msg">获取验证码</span>
+					</div>
+				</div>
+				<div class="message">
+					<input type="number" placeholder="请输入短信验证码"/>
+				</div>
+			</div>
+		</div>
+		<div class="scroll">
+			<p class="scroll_btn">申请免费观看scroll</p>
+		</div>
+		<div class="bottom" style="display:none;">
+			<p class="btn">申请免费观看bottom</p>
+		</div>
+		<script type="text/javascript" src="js/common/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript" src="js/common/rem.js"></script>
+		<script type="text/javascript" src="js/common/service.js"></script>
+		<script type="text/javascript" src="js/common/md5.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	</body>
+</html>
